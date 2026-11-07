@@ -1,0 +1,25 @@
+task_id,title,owner,status,priority,created_date,due_date,completed_date,blocker
+T-101,Confirm vendor invoice for October,Ayesha,Done,High,2026-11-02,2026-11-03,2026-11-03,
+T-102,Update client onboarding checklist,Daniyal,Done,Medium,2026-11-02,2026-11-04,2026-11-04,
+T-103,Chase overdue payment from Client Northwind,Ayesha,Done,High,2026-10-30,2026-11-03,2026-11-05,Late reply from accounts team
+T-104,Prepare weekly delivery summary,Bassam,Done,Medium,2026-11-02,2026-11-05,2026-11-05,
+T-105,Book venue for team offsite,Daniyal,Done,Low,2026-11-02,2026-11-06,2026-11-06,
+T-106,Review SLA breach report for October,Bassam,Done,High,2026-11-03,2026-11-05,2026-11-04,
+T-107,Send follow-up emails to 5 stalled leads,Ayesha,Done,Medium,2026-11-03,2026-11-06,2026-11-06,
+T-108,Fix broken links on client portal,Daniyal,Done,Medium,2026-11-04,2026-11-06,2026-11-07,
+T-109,Reconcile October expense claims,Bassam,Done,Low,2026-11-02,2026-11-06,2026-11-06,
+T-110,Upload signed contract to shared drive,Ayesha,Done,High,2026-11-05,2026-11-06,2026-11-06,
+T-111,Follow up on delayed shipment #4821,Daniyal,In Progress,High,2026-11-03,2026-11-06,,Waiting on courier tracking update
+T-112,Draft SOP for refund requests,Bassam,In Progress,Medium,2026-11-04,2026-11-09,,Needs sign-off from finance
+T-113,Onboard new support contractor,Ayesha,In Progress,Medium,2026-11-05,2026-11-08,,
+T-114,Prepare Q4 capacity forecast,Bassam,To Do,High,2026-11-05,2026-11-10,,
+T-115,Audit access for leavers from October,Daniyal,To Do,Medium,2026-11-06,2026-11-11,,
+T-116,Escalate unresolved ticket #9912,Ayesha,Blocked,High,2026-10-28,2026-11-02,,Vendor has not responded in 6 days
+T-117,Confirm catering for client workshop,Daniyal,To Do,Low,2026-11-06,2026-11-12,,
+T-118,Close out October timesheets,Bassam,Done,Medium,2026-11-02,2026-11-04,2026-11-04,
+T-119,Update pricing sheet for November,Ayesha,In Progress,Medium,2026-11-06,2026-11-09,,
+T-120,Send client satisfaction survey,Daniyal,Done,Low,2026-11-03,2026-11-06,2026-11-07,
+T-121,Verify backup of shared drive,Bassam,To Do,Low,2026-11-06,2026-11-13,,
+T-122,Follow up on invoice dispute #771,Ayesha,Blocked,High,2026-10-29,2026-11-04,,Client finance contact on leave
+T-123,Schedule November team training,Daniyal,Done,Medium,2026-11-04,2026-11-07,2026-11-07,
+T-124,Review new hire onboarding feedback,Bassam,In Progress,Low,2026-11-05,2026-11-10,,
