@@ -2,11 +2,13 @@
 (or: python test_weekly_report.py for a plain-assert run)."""
 
 import io
+import tempfile
 from datetime import date
+from pathlib import Path
 
 import pandas as pd
 
-from weekly_report import compute_metrics, last_monday, render_markdown
+from weekly_report import compute_metrics, last_monday, load_tasks, render_markdown
 
 SAMPLE = """task_id,title,owner,status,priority,created_date,due_date,completed_date,blocker
 A-1,On time task,Ana,Done,High,2026-11-02,2026-11-03,2026-11-03,
@@ -47,8 +49,20 @@ def test_render_contains_headline():
     assert "Waiting on vendor" in md
 
 
+def test_empty_tasks_csv(tmp_path):
+    path = tmp_path / "empty-tasks.csv"
+    path.write_text(SAMPLE.splitlines()[0] + "\n", encoding="utf-8")
+
+    df = load_tasks(path)
+
+    assert df.empty
+    assert list(df.columns) == SAMPLE.splitlines()[0].split(",")
+
+
 if __name__ == "__main__":
     test_last_monday()
     test_metrics()
     test_render_contains_headline()
+    with tempfile.TemporaryDirectory() as temp_dir:
+        test_empty_tasks_csv(Path(temp_dir))
     print("All tests passed.")
